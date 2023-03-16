@@ -1,7 +1,6 @@
 package org.example;
 
-import org.example.Commands.AbstractCommand;
-import org.example.Commands.HelpCommand;
+import org.example.Commands.*;
 import org.example.exceptions.CommandInterruptedException;
 import org.example.interfaces.Execute;
 import org.example.interfaces.Loading;
@@ -18,17 +17,22 @@ public class Invoker {
         this.receiver = receiver;
         commandsMap = new HashMap<>();
         var helpCommand = new HelpCommand(commandsMap.values());
+        var infoCommand = new InfoCommand();
+        var exitCommand = new ExitCommand();
+        var clearCommand = new ClearCommand();
+
         commandsMap.put("help", helpCommand);
+        commandsMap.put("info", infoCommand);
+        commandsMap.put("exit", exitCommand);
+        commandsMap.put("clear", clearCommand);
     }
-////        commandsMap.put("info", new InfoCommand(this));
 ////        commandsMap.put("show", new ShowCommand(this));
 ////        commandsMap.put("add", new AddCommand(this));
 ////        commandsMap.put("update id", new UpdateIdCommand(this));
 ////        commandsMap.put("remove_by_id", new RemoveByIdCommand(this));
-////        commandsMap.put("clear", new ClearCommand(this));
 ////        commandsMap.put("save", new SaveCommand(this));
 ////        commandsMap.put("execute_script", new ExecuteScriptCommand(this));
-////        commandsMap.put("exit", new ExitCommand(this));
+
 ////        commandsMap.put("add_if_max", new AddIfMaxCommand(this));
 ////        commandsMap.put("remove_greater", new RemoveGreaterCommand(this));
 ////        commandsMap.put("reorder", new ReorderCommand(this));

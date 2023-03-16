@@ -1,21 +1,16 @@
-//package org.example.Commands;
-//
-//import org.example.interfaces.Execute;
-//
-//public class ClearCommand implements Execute {
-//    @Override
-//    public String getName() {
-//        return "clear";
-//    }
-//
-//    @Override
-//    public String description() {
-//        return "clear the collection";
-//    }
-//
-//    @Override
-//    public String execute(String[] args) {
-//
-//        return false;
-//    }
-//}
+package org.example.Commands;
+
+import org.example.Receiver;
+import org.example.interfaces.Execute;
+
+import java.util.ArrayList;
+
+public class ClearCommand extends AbstractCommand implements Execute {
+    public ClearCommand() {
+        super("clear", "clear the collection", 0);
+    }
+    @Override
+    public String execute(ArrayList<String> arguments, Receiver worker) {
+        return worker.clearCollection();
+    }
+}

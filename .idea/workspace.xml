@@ -4,57 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d823468d-41a7-4c57-84a0-7fa627e3c4da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/CommandChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/CommandDataChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/CommandValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/DataInOutStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/OutStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Invoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LocalDateBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MetaInfoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/file.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="d823468d-41a7-4c57-84a0-7fa627e3c4da" name="Changes" comment="Started new architectury">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CommandManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CommandManagerCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CommandManagerCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/AbstractCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/AbstractCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/AddCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/AddIfMaxCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/AddIfMaxCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ClearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ClearCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExecuteScriptCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExecuteScriptCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/HelpCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/InfoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/PrintFieldAscendingStudentsCountCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/PrintFieldAscendingStudentsCountCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/PrintUniqueFormOfEducationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/PrintUniqueFormOfEducationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/RemoveByIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/RemoveByIdCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/RemoveGreaterCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/RemoveGreaterCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ReorderCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ReorderCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/SaveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ShowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ShowCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/SumOfStudentsCountCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/SumOfStudentsCountCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/UpdateIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/UpdateIdCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CommandsContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CommandsContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Invoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Invoker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/XmlUtils/DateTimeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/XmlUtils/DateTimeAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exceptions/CommandInterruptedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/exceptions/CommandInterruptedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exceptions/FileLoadingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/exceptions/FileLoadingException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exceptions/NoAccessToFileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/exceptions/NoAccessToFileException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/interfaces/CollectionCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaces/CollectionCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/interfaces/Loading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/interfaces/Loading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/FormOfEducation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/FormOfEducation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Semester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/StudyGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/StudyGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/StudyGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/StudyGroups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Receiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/xmlFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/xmlFileHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +76,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677514349259</updated>
     </task>
+    <task id="LOCAL-00001" summary="Started new architectury">
+      <created>1678971331152</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678971331152</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +96,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Started new architectury" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started new architectury" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

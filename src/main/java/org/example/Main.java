@@ -1,12 +1,7 @@
 package org.example;
 
-import org.example.Commands.HelpCommand;
-import org.example.interfaces.Execute;
 import org.example.models.StudyGroup;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.HashMap;
 import java.util.Stack;
 
 public class Main {
@@ -23,13 +18,10 @@ public class Main {
 //        xmlFieHandler.load(new File("studyGroups.xml"));
 //        var groups = xmlFieHandler.get();
 //
-
-
         LocalDateBase localDateBase = new LocalDateBase(new Stack<StudyGroup>());
         Receiver receiver = new Receiver(localDateBase);
         Invoker invoker = new Invoker(receiver);
-        new InputManager();
-        InputManager.openStream();
+        InputClireader.openStream();
         System.out.println("Hello");
 
     }
