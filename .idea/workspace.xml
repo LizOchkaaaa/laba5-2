@@ -4,16 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d823468d-41a7-4c57-84a0-7fa627e3c4da" name="Changes" comment="Started new architectury">
+    <list default="true" id="d823468d-41a7-4c57-84a0-7fa627e3c4da" name="Changes" comment="betta">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Annotation/Complex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/ObjectReading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Factores/CoordinatesFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Factores/PersonFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Factores/StudyGroupFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FieldFetcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UniqueId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidateAbstract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidateCoordinatesX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidateName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorBirthday.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorCoordinates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorCoordinatesY.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorFormOfEducation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorHairColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorPassportId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorPersonname.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorSemester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorStudentsCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorStudyGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Validator/ValidatorWeight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ClearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ClearCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/InfoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/CommandChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/CommandChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/CommandDataChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/CommandDataChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CollectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CommandManagerCustom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/AbstractCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/AbstractCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/AddCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/AddIfMaxCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/AddIfMaxCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExecuteScriptCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ExecuteScriptCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/PrintFieldAscendingStudentsCountCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/PrintFieldAscendingStudentsCountCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/PrintUniqueFormOfEducationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/PrintUniqueFormOfEducationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/RemoveByIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/RemoveByIdCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/RemoveGreaterCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/RemoveGreaterCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ReorderCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ReorderCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/SaveCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/ShowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/ShowCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/SumOfStudentsCountCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/SumOfStudentsCountCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Commands/UpdateIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Commands/UpdateIdCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CommandsContainer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Invoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Invoker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MetaInfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MetaInfoCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/xmlFileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/xmlFileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/file.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/FormOfEducation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/FormOfEducation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Semester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/StudyGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/StudyGroup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +97,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -83,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678971331152</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="betta">
+      <created>1679004865987</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679004865987</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,15 +154,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started new architectury" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started new architectury" />
+    <MESSAGE value="betta" />
+    <option name="LAST_COMMIT_MESSAGE" value="betta" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CommandManagerCustom.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Client/FileManager/CommandChecker.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.Client.FileManager.InputClireader;
 import org.example.models.StudyGroup;
 
 import java.util.Stack;
@@ -18,11 +19,10 @@ public class Main {
 //        xmlFieHandler.load(new File("studyGroups.xml"));
 //        var groups = xmlFieHandler.get();
 //
+        UniqueId id = new UniqueId();
         LocalDateBase localDateBase = new LocalDateBase(new Stack<StudyGroup>());
         Receiver receiver = new Receiver(localDateBase);
         Invoker invoker = new Invoker(receiver);
         InputClireader.openStream();
-        System.out.println("Hello");
-
     }
 }

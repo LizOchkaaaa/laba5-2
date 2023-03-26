@@ -11,12 +11,13 @@ repositories {
 }
 
 run {
+    mainClass = 'org.example.Main'
     standardInput = System.in
 }
 
 jar {
     manifest {
-        attributes 'Main-Class': 'src.main'
+        attributes 'Main-Class': 'org.example.Main'
     }
     from {
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE

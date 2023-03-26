@@ -1,22 +1,16 @@
-//package org.example.Commands;
-//
-//import org.example.interfaces.Execute;
-//
-//public class ReorderCommand implements Execute {
-//
-//    @Override
-//    public String getName() {
-//        return "reorder";
-//    }
-//
-//    @Override
-//    public String description() {
-//        return "sort the collection in reverse order";
-//    }
-//
-//    @Override
-//    public String execute(String[] args) {
-//
-//        return false;
-//    }
-//}
+package org.example.Commands;
+
+import org.example.Receiver;
+import org.example.interfaces.Execute;
+
+import java.util.ArrayList;
+
+public class ReorderCommand extends AbstractCommand implements Execute {
+    public ReorderCommand() {
+        super("reorder", "sort the collection in reverse order", 0);
+    }
+    @Override
+    public String execute(ArrayList<String> arguments, Receiver worker) {
+        return worker.reorder().toString();
+    }
+}

@@ -4,16 +4,16 @@
         <id>1</id>
         <name>123</name>
         <coordinates>
-            <x>3434.0</x>
+            <x>34.0</x>
             <y>3434</y>
         </coordinates>
-        <creationDate>2023-02-27T20:31:33.5375222+03:00[Europe/Moscow]</creationDate>
+        <creationDate>2023-03-12T17:41:02.457874800+03:00[Europe/Moscow]</creationDate>
         <studentsCount>34</studentsCount>
         <formOfEducation>DISTANCE_EDUCATION</formOfEducation>
         <semesterEnum>FIRST</semesterEnum>
         <groupAdmin>
             <name>Liza</name>
-            <birthday/>
+            <birthday>2023-03-12T17:41:02.452874+03:00[Europe/Moscow]</birthday>
             <weight>34</weight>
             <passportID>passport</passportID>
             <hairColor>RED</hairColor>

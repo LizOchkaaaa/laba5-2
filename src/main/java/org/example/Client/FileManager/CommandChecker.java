@@ -3,15 +3,15 @@ package org.example.Client.FileManager;
 import org.example.Commands.AbstractCommand;
 import org.example.Invoker;
 import org.example.MetaInfoCommand;
+import org.example.UniqueId;
 import org.example.interfaces.Execute;
 
 import java.io.OutputStream;
 import java.util.*;
 
 public class CommandChecker {
-    DataInOutStatus correctnessStatus = DataInOutStatus.SUCCESSFULLY;
-
     public DataInOutStatus checkCorrectnessOfCommand(String commandName , ArrayList<String> argumentsToCommand) {
+        DataInOutStatus correctnessStatus = DataInOutStatus.SUCCESSFULLY;
         MetaInfoCommand metaInfoCommand = new MetaInfoCommand();
         /*обращаемся ко всем коммандам и смотрим есть ли такая команда вообще */
         Map<String, AbstractCommand> mapCommand = metaInfoCommand.getMapOfCommand();
@@ -23,7 +23,16 @@ public class CommandChecker {
                 return DataInOutStatus.WRONGARGS;
             }
             if (command.getExtraArgs() >= 1) {
-                correctnessStatus = checkCorrectnessOfComplicatedCommand(command, argumentsToCommand);
+                if (command.getName().equals("update")) {
+                    if (argumentsToCommand.size() == 0) {
+                        return DataInOutStatus.FAILED;
+                    } else {
+                        correctnessStatus = checkCorrectnessOfComplicatedCommand(command, argumentsToCommand);
+                    }
+                } else {
+                    argumentsToCommand.add(String.valueOf(UniqueId.getNewId()));
+                    correctnessStatus = checkCorrectnessOfComplicatedCommand(command, argumentsToCommand);
+                }
             }
             if (correctnessStatus == DataInOutStatus.SUCCESSFULLY) {
                 OutStream.outputIntoCLI(Invoker.execute(command, argumentsToCommand));
@@ -36,17 +45,22 @@ public class CommandChecker {
 
 
     /*проверяем команду у которой много аргусентов на правильность введения */
-    private DataInOutStatus checkCorrectnessOfComplicatedCommand(AbstractCommand command , ArrayList<String> argumentsToCommand) {
+    private DataInOutStatus checkCorrectnessOfComplicatedCommand(AbstractCommand command, ArrayList<String> argumentsToCommand) {
         DataInOutStatus correctnessStatus = DataInOutStatus.SUCCESSFULLY;
         if (command.getExtraArgs() == 1 && argumentsToCommand.size() == 1) {
             correctnessStatus = DataInOutStatus.SUCCESSFULLY;
             return correctnessStatus;
         }
         if (command.getExtraArgs() > 1) {
-            if (argumentsToCommand.size() == 1) {
-                return DataInOutStatus.NOCOMMAND;
+            CommandDataChecker commandChecker = new CommandDataChecker();
+            correctnessStatus = commandChecker.checkInputCommand(command);
+            if (correctnessStatus == DataInOutStatus.SUCCESSFULLY) {
+                argumentsToCommand.addAll(commandChecker.getExtraArgs());
+            }
+            if (argumentsToCommand.size() == 0) {
+                return DataInOutStatus.WRONGARGS;
             }
         }
-        return DataInOutStatus.NOCOMMAND;
+        return correctnessStatus;
     }
 }

@@ -1,4 +1,5 @@
 package org.example.models;
+import org.example.Annotation.Complex;
 import org.example.XmlUtils.DateTimeAdapter;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -13,6 +14,7 @@ public class StudyGroup implements Comparable<StudyGroup>{
     @XmlElement
     private String name; //Поле не может быть null, Строка не может быть пустой
     @XmlElement
+    @Complex
     private Coordinates coordinates; //Поле не может быть null
     @XmlElement
     @XmlJavaTypeAdapter(DateTimeAdapter.class)
@@ -20,10 +22,13 @@ public class StudyGroup implements Comparable<StudyGroup>{
     @XmlElement
     private int studentsCount; //Значение поля должно быть больше 0
     @XmlElement
+    @Complex
     private FormOfEducation formOfEducation; //Поле не может быть null
     @XmlElement
+    @Complex
     private Semester semesterEnum; //Поле может быть null
     @XmlElement
+    @Complex
     private Person groupAdmin; //Поле не может быть null
 
 
@@ -77,12 +82,23 @@ public class StudyGroup implements Comparable<StudyGroup>{
     }
 
     @Override
-    public int compareTo(StudyGroup prod) {
-        return (int)(prod.getId() - getId());
+    public int compareTo(StudyGroup o) {
+        if (o.getName().compareTo(this.name) != 0) return o.getName().compareTo(this.name);
+        if (o.getCreationDate().compareTo(this.creationDate) != 0) return o.getCreationDate().compareTo(this.creationDate);
+        if (o.getPerson().compareTo(this.groupAdmin) != 0) return o.getPerson().compareTo(this.groupAdmin);
+        if (o.getSemesterEnum().compareTo(this.semesterEnum) != 0) return o.getSemesterEnum().compareTo(this.semesterEnum);
+        if (o.getFormOfEducation().compareTo(this.formOfEducation) != 0) return o.getFormOfEducation().compareTo(this.formOfEducation);
+        if (o.getCoordinates().compareTo(this.coordinates) != 0) return o.getCoordinates().compareTo(this.coordinates);
+        if (o.getStudentsCount() - this.studentsCount != 0) return o.getStudentsCount() - this.studentsCount;
+        return 0;
     }
 
     @Override
     public String toString() {
-        return id + " " + name + " " + creationDate;
+        return "StudyGroup [id=" + id + ", name=" + name + ", coordinates=" + coordinates + ", creationDate="
+                + creationDate + ", studentsCount=" + studentsCount + ", formOfEducation=" + formOfEducation
+                + ", semesterEnum=" + semesterEnum + ", groupAdmin=" + groupAdmin + "]";
     }
+
+
 }

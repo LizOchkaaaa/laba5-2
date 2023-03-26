@@ -23,4 +23,12 @@ public abstract class AbstractCommand implements Execute {
         return name + " - " + discription;
     }
 
+    public boolean isNeededExtraArgs(){
+        return extraArgs > 2;
+    }
+
+    public String getName() {
+        return name;
+    }
+
 }

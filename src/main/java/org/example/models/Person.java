@@ -1,6 +1,7 @@
 package org.example.models;
 
 
+import org.example.Annotation.Complex;
 import org.example.XmlUtils.DateTimeAdapter;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -20,6 +21,7 @@ public class Person {
     @XmlElement
     private String passportID; //Поле не может быть null
     @XmlElement
+    @Complex
     private Color hairColor; //Поле не может быть null
 
     public Person(){}
@@ -51,4 +53,13 @@ public class Person {
         return passportID;
     }
 
+    public int compareTo(Person o) {
+        if (o.getName().compareTo(o.getName()) != 0 ) return o.getName().compareTo(o.getName());
+        if (o.getWeight() - this.weight != 0) return o.getWeight() - this.weight;
+        if (o.getHairColor().compareTo(o.getHairColor()) != 0 ) return o.getHairColor().compareTo(o.getHairColor());
+        if (o.getBirthday().compareTo(o.getBirthday()) != 0 ) return o.getBirthday().compareTo(o.getBirthday());
+        if (o.getPassportID().compareTo(o.getPassportID()) != 0 ) return o.getPassportID().compareTo(o.getPassportID());
+        return 0;
+
+    }
 }
